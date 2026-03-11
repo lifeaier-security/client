@@ -4,7 +4,7 @@ import ApiService from "../services/ApiService";
 import { Box, Typography, Paper, } from '@mui/material';
 import { useSearchParams } from "react-router-dom";
 
-export default function MailVerification() {
+export default function MailVerify() {
 
     const [searchParams] = useSearchParams();
     const [status, setStatus] = React.useState("Verifying...");

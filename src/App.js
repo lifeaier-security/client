@@ -1,11 +1,15 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
+
 import Login from "./pages/0_Login";
-import NotFound from "./pages/0_NotFound";
+import MailVerfy from "./pages/0_MailVerify";
+import User from "./pages/0_User";
+
 import Home from "./pages/1_Home";
-import About from "./pages/6_About";
-import MailVerfication from "./pages/6_MailVerification";
-import User from "./pages/8_User";
+import About from "./pages/2_About";
+
+import NotFound from "./pages/99_NotFound";
+
 import ProtectedRoute from "./routes/ProtectedRoute";
 import { AuthProvider } from "./contexts/AuthContext";
 import { LangProvider } from "./contexts/LangContext";
@@ -23,7 +27,7 @@ function App() {
                 <AuthProvider>
                     <Routes>
                         <Route path="/login" element={<Login />} />
-                        <Route path="/verify" element={<MailVerfication />} />
+                        <Route path="/verify" element={<MailVerfy />} />
                         <Route path="*" element={<NotFound />} />
 
                         <Route element={<MainLayout />}>
