@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from "react-router-dom";
 
 import Login from "./pages/0_Login";
-import MailVerfy from "./pages/0_MailVerify";
+import MailVerify from "./pages/0_MailVerify";
 import User from "./pages/0_User";
 
 import Home from "./pages/1_Home";
@@ -30,7 +30,7 @@ function App() {
                 <AuthProvider>
                     <Routes>
                         <Route path="/login" element={<Login />} />
-                        <Route path="/verify" element={<MailVerfy />} />
+                        <Route path="/verify" element={<MailVerify />} />
                         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                         <Route path="/term-of-service" element={<TermOfService />} />
                         <Route path="/data-deletion" element={<DataDeletion />} />
