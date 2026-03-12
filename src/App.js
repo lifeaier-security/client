@@ -8,6 +8,9 @@ import User from "./pages/0_User";
 import Home from "./pages/1_Home";
 import About from "./pages/2_About";
 
+import PrivacyPolicy from "./pages/91_PrivacyPolicy";
+import TermOfService from "./pages/92_TermOfService";
+import DataDeletion from "./pages/93_DataDeletion";
 import NotFound from "./pages/99_NotFound";
 
 import ProtectedRoute from "./routes/ProtectedRoute";
@@ -28,6 +31,9 @@ function App() {
                     <Routes>
                         <Route path="/login" element={<Login />} />
                         <Route path="/verify" element={<MailVerfy />} />
+                        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                        <Route path="/term-of-service" element={<TermOfService />} />
+                        <Route path="/data-deletion" element={<DataDeletion />} />
                         <Route path="*" element={<NotFound />} />
 
                         <Route element={<MainLayout />}>

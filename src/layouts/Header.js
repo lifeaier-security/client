@@ -9,6 +9,9 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from "@mui/icons-material/Logout";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
+import PrivacyTipIcon from "@mui/icons-material/PrivacyTip";
+import DescriptionIcon from "@mui/icons-material/Description";
+
 import { useLang } from "../contexts/LangContext";
 import { Languages } from "../components/Language";
 
@@ -232,6 +235,18 @@ export default function Header() {
                                 <MenuItem onClick={() => handleMenuClick("/about")}>
                                     <ListItemIcon><HelpOutlineIcon /></ListItemIcon>
                                     <ListItemText>About</ListItemText>
+                                </MenuItem>
+                                <MenuItem onClick={() => window.open("https://www.lifeaier.com/privacy-policy", "_blank", "noopener,noreferrer" )}>
+                                    <ListItemIcon><PrivacyTipIcon /></ListItemIcon>
+                                    <ListItemText>Privacy Policy</ListItemText>
+                                </MenuItem>
+                                <MenuItem onClick={() => window.open("https://www.lifeaier.com/term-of-service", "_blank", "noopener,noreferrer" )}>
+                                    <ListItemIcon><DescriptionIcon /></ListItemIcon>
+                                    <ListItemText>Terms of Service</ListItemText>
+                                </MenuItem>
+                                <MenuItem onClick={() => window.open("https://www.lifeaier.com/data-deletion", "_blank", "noopener,noreferrer" )}>
+                                    <ListItemIcon><DescriptionIcon /></ListItemIcon>
+                                    <ListItemText>Data Deletion</ListItemText>
                                 </MenuItem>
                             </Menu>
                         </Box>
