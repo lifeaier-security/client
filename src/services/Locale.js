@@ -15,7 +15,7 @@ export const Locale = {
         resendMailVerification: "Your email is not verified. Resend verification email?",
         checkYourInbox: "Verification email resent. Please check your inbox.",
 
-        inputUserInfo: "Enter your information!",
+        inputUserInfo: "Enter your information...",
         register: "Register",
         cancel: "Cancel",
         registerFailed: "Registration failed.",
@@ -82,7 +82,7 @@ export const Locale = {
         resendMailVerification: "Таны имэйл баталгаажаагүй байна. Баталгаажуулах имэйлээ дахин илгээх үү?",
         checkYourInbox: "Баталгаажуулах имэйл илгээгдлээ. Та имэйлээ шалгана уу.",
 
-        inputUserInfo: "Мэдээллээ оруулна уу!",
+        inputUserInfo: "Мэдээллээ оруулна уу...",
         register: "Бүртгүүлэх",
         cancel: "Болих",
         registerFailed: "Бүртгүүлэх амжилтгүй боллоо.",
