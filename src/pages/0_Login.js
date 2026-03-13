@@ -32,12 +32,12 @@ export default function Login() {
     const [loading, setLoading] = React.useState(false);
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const emailInvalid = registerData.email && !emailRegex.test(registerData.email);
+    const emailInvalid = Boolean(registerData.email) && !emailRegex.test(registerData.email);
 
     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).+$/;
-    const passwordInvalid = registerData.password && !passwordRegex.test(registerData.password);
+    const passwordInvalid = Boolean(registerData.password) && !passwordRegex.test(registerData.password);
 
-    const passwordMismatch = registerData.confirmPassword && registerData.password !== registerData.confirmPassword;
+    const passwordMismatch = Boolean(registerData.confirmPassword) && registerData.password !== registerData.confirmPassword;
 
     const [showPassword, setShowPassword] = React.useState(false);
 
